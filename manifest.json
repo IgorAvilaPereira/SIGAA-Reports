@@ -1,6 +1,6 @@
 {
-    "name": "Exportação de Emails",
-    "description": "Exporta Emails de sistemas.ifrs.edu.br",
+    "name": "SIGAA-Reports",
+    "description": "SIGAA-Reports",
     "version": "1.0",
     "manifest_version": 3,
     "icons": {

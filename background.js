@@ -4,7 +4,7 @@ function script() {
   var output =  "";
   while (true) {
       try {
-          output += document.querySelectorAll(".tablsc td:nth-child(4)")[i].innerText+";"+document.querySelectorAll(".tablsc td:nth-child(3)")[i].innerText+";"+document.querySelectorAll(".tablsc td:nth-child(4)")[i].innerText+"@aluno.riogrande.ifrs.edu.br;<br>";    
+          output += document.querySelectorAll(`[class^=linha]`)[i].innerText.split("\t")[0]+";"+document.querySelectorAll(`[class^=linha]`)[i].innerText.split("\t")[1]+";"+document.querySelectorAll(`[class^=linha]`)[i].innerText.split("\t")[2]+";"+document.querySelectorAll(`[class^=linha]`)[i].innerText.split("\t")[0]+"@aluno.riogrande.ifrs.edu.br;"+document.querySelectorAll(`[class^=linha]`)[i].innerText.split("\t")[3]+";<br>";    
           i++;
        } catch  {
           break;     
@@ -23,7 +23,7 @@ function script2() {
     var output =  "";
     while (true) {
         try {
-            output += document.querySelectorAll(".tablsc td:nth-child(4)")[i].innerText+"@aluno.riogrande.ifrs.edu.br<br>";    
+            output += document.querySelectorAll(`[class^=linha]`)[i].innerText.split("\t")[0]+"@aluno.riogrande.ifrs.edu.br;<br>";    
             i++;
          } catch  {
             break;     
